@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a99178eb64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/index.html" id="navbar__logo"><i class="fa-solid fa-microchip"></i>DataScience</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/portfolio.html" class="navbar__links"><i class="fa-solid fa-chart-column"></i>Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/project.html" class="navbar__links"><i class="fa-solid fa-folder-open"></i>Project</a>
+          </li>
+          <li class="navbar__item">
+            <a href="https://rapidcharts.io/datascience" target="_blank" class="navbar__links"><i class="fa-solid fa-graduation-cap"></i>Data Science Course</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" target="_blank" class="navbar__links"><i class="fa-brands fa-github"></i>GitHub Respository</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Selection -->
+    <div class="main">
+      <div class="main__container">
+        <video autoplay muted loop id="bg__video">
+          <source src="images/NetworkBackground.mp4" type="video/mp4">
+        </video>
+        <div class="main__content">
+          <div class="intro">
+            <h1>Data Science Portfolio</h1>
+            <p>Jayden Law</p>
+            <div class="indexLinks">
+              <p>Links to each week:</p>
+              <a onclick="currentSlide(1)">Week 1</a><a onclick="currentSlide(2)">Week 2</a><a onclick="currentSlide(3)">Week 3</a><a onclick="currentSlide(4)">Week 4</a><a onclick="currentSlide(5)">Week 5</a><a onclick="currentSlide(6)">Week 6</a><a onclick="currentSlide(7)">Week 7</a><a onclick="currentSlide(8)">Week 8</a><a onclick="currentSlide(9)">Week 9</a><a onclick="currentSlide(10)">Week 10</a>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 1</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 2</h2>
+              <p>LMFAO</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 3</h2>
+              <p>Pahahah</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 4</h2>
+              <p>Im bored</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 5</h2>
+              <p>five and drive</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 6</h2>
+              <p>This stinks</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 7</h2>
+              <p>seven in heaven</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 8</h2>
+              <p>Data science is also more than “machine learning,” which is about how
+systems learn from data. Systems may be trained on data to make decisions, and training is a continuous process, where the system updates its
+learning and (hopefully) improves its decision-making ability with more
+data. A spam filter is a good example of machine learning.</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+            	<h2>Week 9</h2>
+              <p>philisophical thoughts protrude the imagination</p>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="infoCard" id="slideInfoCard">
+              <h2>Week 10</h2>
+              <p>this is my graph</p>
+            </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+          <br>
+
+    <script src="app.js"></script>
+  </body>
+</html>
