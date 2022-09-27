@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/a99178eb64.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script type="text/javascript">
+    var portChart1 = "portfolio_W1.1.json";
+    vegaEmbed('#pc1', portChart1);
+    var portChart2 = "portfolio_W1.2.json";
+    vegaEmbed('#pc2', portChart2);
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -33,7 +42,7 @@
             <a href="https://rapidcharts.io/datascience" target="_blank" class="navbar__links"><i class="fa-solid fa-graduation-cap"></i>Data Science Course</a>
           </li>
           <li class="navbar__item">
-            <a href="/" target="_blank" class="navbar__links"><i class="fa-brands fa-github"></i>GitHub Respository</a>
+            <a href="https://github.com/JaydenLaw87/JaydenLaw87.github.io" target="_blank" class="navbar__links"><i class="fa-brands fa-github"></i>GitHub Respository</a>
           </li>
         </ul>
       </div>
@@ -58,8 +67,19 @@
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-            	<h2>Week 1</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+              <h1>Week 1</h1>
+              <div class="slideTable">
+                <div class="group">
+                  <h2>Chart 1: BTC Price</h2>
+                  <div class="chart" id="pc1"></div>
+                  <p>The above graph shows bitcoin price between the years 2016-2021 with the additional feature of sliders to hone in on a specific time frame.</p>
+                </div>
+                <div class="group">
+                  <h2>Chart 2: Football Scores</h2>
+                  <div class="chart" id="pc2"></div>
+                  <p>This chart represents the disparity between goals scored when playing at home vs away in Premiership football matches.</p>
+                </div>
+              </div>
             </div>
           </div>
 
