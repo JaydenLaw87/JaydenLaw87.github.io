@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+      "text": "IMF Lending indexed to world GDP",
+      "subtitle":"Loans Dispersed %",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "data":{"url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/data_IMF_creditOutstanding_Update.csv"},
+
+  "height": 300,
+  "width": 260,
+
+  "mark": {
+    "type": "bar",
+    "color": "#0633c5ee"},
+
+"encoding": {
+     "x": {
+       "field": "Years",
+       "type": "temporal",
+       "axis": {
+         "title": "Years",
+         "grid": false,
+         "ticks": false,
+         "labelAngle": 45}},
+
+      "y": {
+        "field": "Total%GDP",
+        "type": "quantitative",
+        "title": "Billions $ as % of global GDP",
+        "axis": {"grid": false}}
+}
+}

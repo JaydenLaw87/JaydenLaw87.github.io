@@ -596,8 +596,8 @@
 
 @media only screen and (min-width: 950px) {
   .slideTable {
-    grid-template-columns: 47.5% 47.5%;
-    grid-column-gap: 5%;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
     grid-row-gap: 40px;
     margin-right: 25px;
 }}
@@ -618,4 +618,3 @@
 .group h2 {
   color: var(--black);
 }
-

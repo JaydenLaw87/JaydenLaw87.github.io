@@ -29,8 +29,7 @@
       "field": "Billions",
       "type": "quantitative",
       "title": "Billions $",
-      "axis": {"grid": false}
+      "axis": {"grid": false}}
+
     }
-  },
-  "config": {}
-}
+    }
