@@ -1,9 +1,13 @@
-Pos.,Team,level_2,0
-1,New Zealand,+/-,67
-1,New Zealand,Pts,19
-2,South Africa,+/-,45
-2,South Africa,Pts,18
-3,Australia,+/-,-52
-3,Australia,Pts,10
-4,Argentina,+/-,-60
-4,Argentina,Pts,9
+Pos.,Team,Pts,Points Difference,level_4,0
+1,New Zealand,19,67,W,4
+1,New Zealand,19,67,D,0
+1,New Zealand,19,67,L,2
+2,South Africa,18,45,W,4
+2,South Africa,18,45,D,0
+2,South Africa,18,45,L,2
+3,Australia,10,-52,W,2
+3,Australia,10,-52,D,0
+3,Australia,10,-52,L,4
+4,Argentina,9,-60,W,2
+4,Argentina,9,-60,D,0
+4,Argentina,9,-60,L,4
