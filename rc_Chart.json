@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/RC_Data.csv"
+  },
+  "height": 300,
+  "width": 260,
+  
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "level_2", "title": "Performance Metric"},
+    "y": {"field": "0", "type": "quantitative", "title": "Totals"},
+    "xOffset": {"field": "Team"},
+    "color": {"field": "Team"}
+  },
+  "config": {}
+}

@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/data_ONS-P37A.json",
+       "format": {
+           "type":"json",
+           "property": "years"}},
+
+   "transform": [
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"}
+  ],
+
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1997,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1997,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+
+    "title": {
+        "text": "Grain Mill, Starches & Starch Products",
+        "subtitle": "United Kingdom (million GDP)",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":210,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"seagreen",
+        "strokeWidth":2,
+        "opacity":1},
+
+
+    "encoding": {
+      "x": {
+          "field": "date",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title":null}
+    }
+}

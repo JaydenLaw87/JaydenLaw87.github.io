@@ -600,7 +600,20 @@
     grid-column-gap: 10%;
     grid-row-gap: 40px;
     margin-right: 25px;
-}}
+  }
+  #dash {
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3%;
+    grid-row-gap: 40px;
+    margin-right: 25px;
+  }
+  #candle {
+    grid-template-columns: 97%;
+    grid-column-gap: 3%;
+    grid-row-gap: 40px;
+    margin-right: 25px;
+  }
+}
 
 .group{
   margin: 20px 50px;
