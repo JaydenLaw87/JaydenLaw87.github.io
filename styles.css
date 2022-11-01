@@ -587,6 +587,10 @@
   padding: 15px;
 }
 
+.chart-wrapper{
+  color:white;
+}
+
 .slideTable{
   display: grid;
   grid-template-columns: 100%;
