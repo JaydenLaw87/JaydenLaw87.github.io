@@ -55,6 +55,12 @@
     var portChart8i = "data_ONS-P46J_Chart.json";
     vegaEmbed('#pc8i', portChart8i);
     </script>
+    <script type="text/javascript">
+    var portChart9 = "Map1.json";
+    vegaEmbed('#pc9', portChart9);
+    var portChart10 = "Map2.json;
+    vegaEmbed('#pc10', portChart10);
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -206,15 +212,26 @@
 
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-            	<h2>Week 6</h2>
-              <p>This stinks</p>
+            	<h1>Week 6</h1>
+              <h2>Reading Week</h2>
             </div>
           </div>
 
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-            	<h2>Week 7</h2>
-              <p>seven in heaven</p>
+              <h1>Week 7</h1>
+              <div class="slideTable">
+                <div class="group">
+                  <h2>Chart 9: Maps of Asia</h2>
+                  <div class="chart" id="pc9"></div>
+                  <p>This is a basic interactive map of Asia which shows the induvidual country name when hovering over it</p>
+                </div>
+                <div class="group">
+                  <h2>Chart 10: Maps of Asia</h2>
+                  <div class="chart" id="pc10"></div>
+                  <p>This is a improved interactive map of Asia which also show the GDP per Capita as well as colour coding based on the value</p>
+                </div>
+              </div>
             </div>
           </div>
 
