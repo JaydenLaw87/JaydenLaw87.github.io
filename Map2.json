@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Map of Asian Countries",
+  "title": {
+    "text": "Asia",
+    "subtitle": ["Asian Countries GDP per Capita 2020 indexed to 2017", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "width": 360,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/custom.geo.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "key": "country",
+        "fields": ["GDP_per_Capita"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/gdp-per-capita-worldbank.csv"
+        }
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "darkblue", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {"field": "GDP_per_Capita", "type": "quantitative"},
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "country"},
+      {"field": "GDP_per_Capita"}
+    ]
+  }
+}
