@@ -12,7 +12,7 @@
     "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/data_IMF_creditOutstanding.csv"
   },
   "height": 300,
-  "width": 260,
+  "width": "container",
   "mark": {"type": "bar", "color": "#0633c5ee"},
   "encoding": {
     "x": {
