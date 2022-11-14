@@ -12,7 +12,7 @@
     "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/data_IMF_creditOutstanding.csv"
   },
   "height": 300,
-  "width": "250",
+  "width": "container",
   "mark": {"type": "bar", "color": "#0633c5ee"},
   "encoding": {
     "x": {
@@ -29,7 +29,7 @@
       "field": "Billions",
       "type": "quantitative",
       "title": "Billions $",
-      "axis": {"grid": false}}
-
+      "axis": {"grid": false}
     }
-    }
+  }
+}
