@@ -1,117 +1,195 @@
-﻿EMEA,Americas,APAC
-Albania,Antigua and Barbuda,Afghanistan
-Algeria,Argentina,Australia
-Andorra,Bahamas,Bangladesh
-Angola,Barbados,Bhutan
-Austria,Belize,Burma
-Bahrain,Bolivia,Brunei
-Belarus,Brazil,Cambodia
-Belgium,Canada,China
-Benin,Chile,Cook Islands
-Bosnia and Herzegovina,Colombia,Federated States of Micronesia
-Botswana,Costa Rica,Fiji
-Bulgaria,Cuba,India
-Burkina Faso,Dominica,Indonesia
-Burundi,Dominican Republic,Japan
-Cameroon,Ecuador,Kiribati
-Cape Verde,El Salvador,Laos
-Central African Republic,Grenada,Malaysia
-Chad,Guatemala,Maldives
-Comoros,Guyana,Marshall Islands
-Croatia,Haiti,Mongolia
-Cyprus,Honduras,Nepal
-Czech Republic,Jamaica,New Caledonia
-Democratic Republic of the Congo,Mexico,New Zealand
-Denmark,Nicaragua,Niue
-Djibouti,Panama,North Korea
-Egypt,Paraguay,Pakistan
-Equatorial Guinea,Peru,Palau
-Eritrea,Saint Kitts and Nevis,Papua New Guinea
-Estonia,Saint Lucia,Philippines
-Ethiopia,Saint Vincent and the Grenadines,Singapore
-Faroe Islands,Suriname,Solomon Islands
-Finland,Trinidad and Tobago,South Korea
-France,United States of America,Sri Lanka
-Gabon,Uruguay,Taiwan
-Gambia,Venezuela,Thailand
-Georgia,Greenland,Timor-Leste
-Germany,,Tonga
-Ghana,,Tuvalu
-Gibraltar,,Vanuatu
-Greece,,Vietnam
-Guernsey,,Hong Kong
-Guinea,,Macau
-Guinea-Bissau,,
-Hungary,,
-Iceland,,
-Iran,,
-Iraq,,
-Ireland,,
-Isle Of Man,,
-Israel,,
-Italy,,
-Ivory Coast,,
-Jersey,,
-Jordan,,
-Kenya,,
-Kuwait,,
-Latvia,,
-Lebanon,,
-Lesotho,,
-Liberia,,
-Libya,,
-Liechtenstein,,
-Lithuania,,
-Luxembourg,,
-Macedonia,,
-Madagascar,,
-Malawi,,
-Mali,,
-Malta,,
-Mauritania,,
-Mauritius,,
-Moldova,,
-Monaco,,
-Montenegro,,
-Morocco,,
-Mozambique,,
-Namibia,,
-Netherlands,,
-Niger,,
-Nigeria,,
-Norway,,
-Oman,,
-Palestine,,
-Poland,,
-Portugal,,
-Qatar,,
-Romania,,
-Rwanda,,
-San Marino,,
-Sao Tome & Principe,,
-Saudi Arabia,,
-Senegal,,
-Serbia,,
-Slovakia,,
-Slovenia,,
-Somalia,,
-South Africa,,
-Spain,,
-Sudan,,
-Swaziland,,
-Sweden,,
-Switzerland,,
-Syria,,
-Tanzania,,
-Togo,,
-Tunisia,,
-Turkey,,
-Uganda,,
-Ukraine,,
-United Arab Emirates,,
-United Kingdom,,
-Vatican City,,
-Western Sahara,,
-Yemen,,
-Zambia,,
-Zimbabwe,,
+﻿Countries,Region
+Albania,EMEA
+Algeria,EMEA
+Andorra,EMEA
+Angola,EMEA
+Austria,EMEA
+Bahrain,EMEA
+Belarus,EMEA
+Belgium,EMEA
+Benin,EMEA
+Bosnia and Herzegovina,EMEA
+Botswana,EMEA
+Bulgaria,EMEA
+Burkina Faso,EMEA
+Burundi,EMEA
+Cameroon,EMEA
+Cape Verde,EMEA
+Central African Republic,EMEA
+Chad,EMEA
+Comoros,EMEA
+Croatia,EMEA
+Cyprus,EMEA
+Czech Republic,EMEA
+Democratic Republic of the Congo,EMEA
+Denmark,EMEA
+Djibouti,EMEA
+Egypt,EMEA
+Equatorial Guinea,EMEA
+Eritrea,EMEA
+Estonia,EMEA
+Ethiopia,EMEA
+Faroe Islands,EMEA
+Finland,EMEA
+France,EMEA
+Gabon,EMEA
+Gambia,EMEA
+Georgia,EMEA
+Germany,EMEA
+Ghana,EMEA
+Gibraltar,EMEA
+Greece,EMEA
+Guernsey,EMEA
+Guinea,EMEA
+Guinea-Bissau,EMEA
+Hungary,EMEA
+Iceland,EMEA
+Iran,EMEA
+Iraq,EMEA
+Ireland,EMEA
+Isle Of Man,EMEA
+Israel,EMEA
+Italy,EMEA
+Ivory Coast,EMEA
+Jersey,EMEA
+Jordan,EMEA
+Kenya,EMEA
+Kuwait,EMEA
+Latvia,EMEA
+Lebanon,EMEA
+Lesotho,EMEA
+Liberia,EMEA
+Libya,EMEA
+Liechtenstein,EMEA
+Lithuania,EMEA
+Luxembourg,EMEA
+Macedonia,EMEA
+Madagascar,EMEA
+Malawi,EMEA
+Mali,EMEA
+Malta,EMEA
+Mauritania,EMEA
+Mauritius,EMEA
+Moldova,EMEA
+Monaco,EMEA
+Montenegro,EMEA
+Morocco,EMEA
+Mozambique,EMEA
+Namibia,EMEA
+Netherlands,EMEA
+Niger,EMEA
+Nigeria,EMEA
+Norway,EMEA
+Oman,EMEA
+Palestine,EMEA
+Poland,EMEA
+Portugal,EMEA
+Qatar,EMEA
+Romania,EMEA
+Rwanda,EMEA
+San Marino,EMEA
+Sao Tome & Principe,EMEA
+Saudi Arabia,EMEA
+Senegal,EMEA
+Serbia,EMEA
+Slovakia,EMEA
+Slovenia,EMEA
+Somalia,EMEA
+South Africa,EMEA
+Spain,EMEA
+Sudan,EMEA
+Swaziland,EMEA
+Sweden,EMEA
+Switzerland,EMEA
+Syria,EMEA
+Tanzania,EMEA
+Togo,EMEA
+Tunisia,EMEA
+Turkey,EMEA
+Uganda,EMEA
+Ukraine,EMEA
+United Arab Emirates,EMEA
+United Kingdom,EMEA
+Vatican City,EMEA
+Western Sahara,EMEA
+Yemen,EMEA
+Zambia,EMEA
+Zimbabwe,EMEA
+Antigua and Barbuda,Americas
+Argentina,Americas
+Bahamas,Americas
+Barbados,Americas
+Belize,Americas
+Bolivia,Americas
+Brazil,Americas
+Canada,Americas
+Chile,Americas
+Colombia,Americas
+Costa Rica,Americas
+Cuba,Americas
+Dominica,Americas
+Dominican Republic,Americas
+Ecuador,Americas
+El Salvador,Americas
+Grenada,Americas
+Guatemala,Americas
+Guyana,Americas
+Haiti,Americas
+Honduras,Americas
+Jamaica,Americas
+Mexico,Americas
+Nicaragua,Americas
+Panama,Americas
+Paraguay,Americas
+Peru,Americas
+Saint Kitts and Nevis,Americas
+Saint Lucia,Americas
+Saint Vincent and the Grenadines,Americas
+Suriname,Americas
+Trinidad and Tobago,Americas
+United States of America,Americas
+Uruguay,Americas
+Venezuela,Americas
+Greenland,Americas
+Afghanistan,APAC
+Australia,APAC
+Bangladesh,APAC
+Bhutan,APAC
+Burma,APAC
+Brunei,APAC
+Cambodia,APAC
+China,APAC
+Cook Islands,APAC
+Federated States of Micronesia,APAC
+Fiji,APAC
+India,APAC
+Indonesia,APAC
+Japan,APAC
+Kiribati,APAC
+Laos,APAC
+Malaysia,APAC
+Maldives,APAC
+Marshall Islands,APAC
+Mongolia,APAC
+Nepal,APAC
+New Caledonia,APAC
+New Zealand,APAC
+Niue,APAC
+North Korea,APAC
+Pakistan,APAC
+Palau,APAC
+Papua New Guinea,APAC
+Philippines,APAC
+Singapore,APAC
+Solomon Islands,APAC
+South Korea,APAC
+Sri Lanka,APAC
+Taiwan,APAC
+Thailand,APAC
+Timor-Leste,APAC
+Tonga,APAC
+Tuvalu,APAC
+Vanuatu,APAC
+Vietnam,APAC
+Hong Kong,APAC
+Macau,APAC
