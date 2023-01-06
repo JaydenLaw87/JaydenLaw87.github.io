@@ -1,0 +1,163 @@
+,Firm,Seniority,Compensation,Year
+0,JP Morgan,Analyst 1,50,2019/20
+1,Goldman Sachs,Analyst 1,50,2019/20
+2,Morgan Stanley,Analyst 1,50,2019/20
+3,Bank of America,Analyst 1,50,2019/20
+4,Citi,Analyst 1,50,2019/20
+5,Deutsche Bank,Analyst 1,50,2019/20
+6,Barclays,Analyst 1,50,2019/20
+7,Credit Suisse,Analyst 1,50,2019/20
+8,UBS,Analyst 1,50,2019/20
+9,JP Morgan,Analyst 1,50,2020/21
+10,Goldman Sachs,Analyst 1,50,2020/21
+11,Morgan Stanley,Analyst 1,50,2020/21
+12,Bank of America,Analyst 1,62.5,2020/21
+13,Citi,Analyst 1,50,2020/21
+14,Deutsche Bank,Analyst 1,50,2020/21
+15,Barclays,Analyst 1,50,2020/21
+16,Credit Suisse,Analyst 1,50,2020/21
+17,UBS,Analyst 1,50,2020/21
+18,JP Morgan,Analyst 2,55,2019/20
+19,Goldman Sachs,Analyst 2,60,2019/20
+20,Morgan Stanley,Analyst 2,55,2019/20
+21,Bank of America,Analyst 2,60,2019/20
+22,Citi,Analyst 2,55,2019/20
+23,Deutsche Bank,Analyst 2,55,2019/20
+24,Barclays,Analyst 2,55,2019/20
+25,Credit Suisse,Analyst 2,55,2019/20
+26,UBS,Analyst 2,58,2019/20
+27,JP Morgan,Analyst 2,55,2020/21
+28,Goldman Sachs,Analyst 2,60,2020/21
+29,Morgan Stanley,Analyst 2,55,2020/21
+30,Bank of America,Analyst 2,65.5,2020/21
+31,Citi,Analyst 2,55,2020/21
+32,Deutsche Bank,Analyst 2,55,2020/21
+33,Barclays,Analyst 2,55,2020/21
+34,Credit Suisse,Analyst 2,55,2020/21
+35,UBS,Analyst 2,58,2020/21
+36,JP Morgan,Analyst 3,60,2019/20
+37,Goldman Sachs,Analyst 3,,2019/20
+38,Morgan Stanley,Analyst 3,,2019/20
+39,Bank of America,Analyst 3,,2019/20
+40,Citi,Analyst 3,60,2019/20
+41,Deutsche Bank,Analyst 3,,2019/20
+42,Barclays,Analyst 3,60,2019/20
+43,Credit Suisse,Analyst 3,60,2019/20
+44,UBS,Analyst 3,62,2019/20
+45,JP Morgan,Analyst 3,60,2020/21
+46,Goldman Sachs,Analyst 3,,2020/21
+47,Morgan Stanley,Analyst 3,,2020/21
+48,Bank of America,Analyst 3,,2020/21
+49,Citi,Analyst 3,60,2020/21
+50,Deutsche Bank,Analyst 3,,2020/21
+51,Barclays,Analyst 3,60,2020/21
+52,Credit Suisse,Analyst 3,60,2020/21
+53,UBS,Analyst 3,60,2020/21
+54,JP Morgan,Associate 1/2,90,2019/20
+55,Goldman Sachs,Associate 1/2,91,2019/20
+56,Morgan Stanley,Associate 1/2,98,2019/20
+57,Bank of America,Associate 1/2,90,2019/20
+58,Citi,Associate 1/2,90,2019/20
+59,Deutsche Bank,Associate 1/2,90,2019/20
+60,Barclays,Associate 1/2,90,2019/20
+61,Credit Suisse,Associate 1/2,90,2019/20
+62,UBS,Associate 1/2,95,2019/20
+63,JP Morgan,Associate 1/2,90,2020/21
+64,Goldman Sachs,Associate 1/2,91,2020/21
+65,Morgan Stanley,Associate 1/2,98,2020/21
+66,Bank of America,Associate 1/2,105,2020/21
+67,Citi,Associate 1/2,90,2020/21
+68,Deutsche Bank,Associate 1/2,90,2020/21
+69,Barclays,Associate 1/2,90,2020/21
+70,Credit Suisse,Associate 1/2,90,2020/21
+71,UBS,Associate 1/2,95,2020/21
+72,JP Morgan,Associate 2/3,105,2019/20
+73,Goldman Sachs,Associate 2/3,106,2019/20
+74,Morgan Stanley,Associate 2/3,123,2019/20
+75,Bank of America,Associate 2/3,105,2019/20
+76,Citi,Associate 2/3,105,2019/20
+77,Deutsche Bank,Associate 2/3,105,2019/20
+78,Barclays,Associate 2/3,105,2019/20
+79,Credit Suisse,Associate 2/3,105,2019/20
+80,UBS,Associate 2/3,110,2019/20
+81,JP Morgan,Associate 2/3,105,2020/21
+82,Goldman Sachs,Associate 2/3,106,2020/21
+83,Morgan Stanley,Associate 2/3,123,2020/21
+84,Bank of America,Associate 2/3,120,2020/21
+85,Citi,Associate 2/3,105,2020/21
+86,Deutsche Bank,Associate 2/3,105,2020/21
+87,Barclays,Associate 2/3,105,2020/21
+88,Credit Suisse,Associate 2/3,105,2020/21
+89,UBS,Associate 2/3,110,2020/21
+90,JP Morgan,Associate 3/4,120,2019/20
+91,Goldman Sachs,Associate 3/4,122,2019/20
+92,Morgan Stanley,Associate 3/4,123,2019/20
+93,Bank of America,Associate 3/4,120,2019/20
+94,Citi,Associate 3/4,120,2019/20
+95,Deutsche Bank,Associate 3/4,110/120,2019/20
+96,Barclays,Associate 3/4,120,2019/20
+97,Credit Suisse,Associate 3/4,120,2019/20
+98,UBS,Associate 3/4,122,2019/20
+99,JP Morgan,Associate 3/4,120,2020/21
+100,Goldman Sachs,Associate 3/4,122,2020/21
+101,Morgan Stanley,Associate 3/4,123,2020/21
+102,Bank of America,Associate 3/4,135,2020/21
+103,Citi,Associate 3/4,120,2020/21
+104,Deutsche Bank,Associate 3/4,120,2020/21
+105,Barclays,Associate 3/4,120,2020/21
+106,Credit Suisse,Associate 3/4,120,2020/21
+107,UBS,Associate 3/4,122,2020/21
+108,JP Morgan,VP 1,145,2019/20
+109,Goldman Sachs,VP 1,150,2019/20
+110,Morgan Stanley,VP 1,170,2019/20
+111,Bank of America,VP 1,150,2019/20
+112,Citi,VP 1,135,2019/20
+113,Deutsche Bank,VP 1,140,2019/20
+114,Barclays,VP 1,140,2019/20
+115,Credit Suisse,VP 1,150,2019/20
+116,UBS,VP 1,150,2019/20
+117,JP Morgan,VP 1,145,2020/21
+118,Goldman Sachs,VP 1,150,2020/21
+119,Morgan Stanley,VP 1,170,2020/21
+120,Bank of America,VP 1,165,2020/21
+121,Citi,VP 1,135,2020/21
+122,Deutsche Bank,VP 1,140,2020/21
+123,Barclays,VP 1,140,2020/21
+124,Credit Suisse,VP 1,150,2020/21
+125,UBS,VP 1,150,2020/21
+126,JP Morgan,VP 2,155,2019/20
+127,Goldman Sachs,VP 2,150,2019/20
+128,Morgan Stanley,VP 2,170,2019/20
+129,Bank of America,VP 2,150,2019/20
+130,Citi,VP 2,150,2019/20
+131,Deutsche Bank,VP 2,155,2019/20
+132,Barclays,VP 2,145,2019/20
+133,Credit Suisse,VP 2,150,2019/20
+134,UBS,VP 2,150,2019/20
+135,JP Morgan,VP 2,155,2020/21
+136,Goldman Sachs,VP 2,150,2020/21
+137,Morgan Stanley,VP 2,170,2020/21
+138,Bank of America,VP 2,165,2020/21
+139,Citi,VP 2,150,2020/21
+140,Deutsche Bank,VP 2,155,2020/21
+141,Barclays,VP 2,145,2020/21
+142,Credit Suisse,VP 2,150,2020/21
+143,UBS,VP 2,150,2020/21
+144,JP Morgan,VP 3,160,2019/20
+145,Goldman Sachs,VP 3,150,2019/20
+146,Morgan Stanley,VP 3,170,2019/20
+147,Bank of America,VP 3,150,2019/20
+148,Citi,VP 3,150,2019/20
+149,Deutsche Bank,VP 3,155,2019/20
+150,Barclays,VP 3,155,2019/20
+151,Credit Suisse,VP 3,150,2019/20
+152,UBS,VP 3,150,2019/20
+153,JP Morgan,VP 3,160,2020/21
+154,Goldman Sachs,VP 3,150,2020/21
+155,Morgan Stanley,VP 3,170,2020/21
+156,Bank of America,VP 3,165,2020/21
+157,Citi,VP 3,150,2020/21
+158,Deutsche Bank,VP 3,155,2020/21
+159,Barclays,VP 3,155,2020/21
+160,Credit Suisse,VP 3,150,2020/21
+161,UBS,VP 3,150,2020/21
