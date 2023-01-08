@@ -1,9 +1,5 @@
-Pos.,Team,level_2,0
-1,New Zealand,+/-,67
-1,New Zealand,Pts,19
-2,South Africa,+/-,45
-2,South Africa,Pts,18
-3,Australia,+/-,-52
-3,Australia,Pts,10
-4,Argentina,+/-,-60
-4,Argentina,Pts,9
+Pos.,Team,+/-,Pts
+1,New Zealand,67,19
+2,South Africa,45,18
+3,Australia,-52,10
+4,Argentina,-60,9
