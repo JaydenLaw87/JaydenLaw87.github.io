@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+  "title": {
+    "text": ["M&A Bulge Bracket Banks Base Salary Compensation "],
+    "subtitle": [
+      "Source : Scraped from ArkesdenData PDF",
+      "The graph shows how bank employees base salary has changed after from",
+      "before Covid-19 hit and afterwards."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/ArkesdenData.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 250,
+  "width": 290,
+  "transform": [{"filter": {"selection": "seniority"}}],
+  "encoding": {
+    "y": {
+      "field": "Compensation",
+      "type": "quantitative",
+      "title": "Compensation $1000's"
+    },
+    "x": {
+      "field": "Firm",
+      "type": "nominal",
+      "sort": {"op": "average", "field": "growth"},
+      "axis": {"offset": 5, "ticks": false, "minExtent": 10, "domain": false}
+    }
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "selection": {
+        "seniority": {
+          "type": "point",
+          "fields": ["Seniority"],
+          "init": "Analyst 1",
+          "bind": {
+            "input": "select",
+            "options": [
+              "Analyst 1",
+              "Analyst 2",
+              "Analyst 3",
+              "Associate 1/2",
+              "Associate 2/3",
+              "Associate 3/4",
+              "VP 1",
+              "VP 2",
+              "VP 3"
+            ],
+            "name": "Seniority:"
+          }
+        }
+      },
+      "encoding": {
+        "detail": {"field": "Firm", "type": "nominal"},
+        "color": {"value": "#BBBBBB"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": false},
+      "encoding": {
+        "tooltip": [
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "Compensation",
+            "type": "quantitative",
+            "title": "Compensation $1000's"
+          }
+        ],
+        "color": {
+          "field": "Year",
+          "type": "nominal",
+          "title": null,
+          "legend": {"orient": "bottom-right"},
+          "scale": {
+            "domain": ["2019/20", "2020/21"],
+            "range": ["#FF0000", "#008000"]
+          }
+        },
+        "size": {"value": 80},
+        "opacity": {"value": 1}
+      }
+    }
+  ],
+  "config": {}
+}

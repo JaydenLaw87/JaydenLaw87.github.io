@@ -10,9 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+    <script type="text/javascript">
+      var proC1 = "projectC1.json";
+      vegaEmbed('#pro1', proC1);
+      var proC2 = "projectG2.json";
+      vegaEmbed('#pro2', proC2);
+      var proC3 = "projectG3.json";
+      vegaEmbed('#pro3', proC3);
+      var proC4 = "proG4.json";
+      vegaEmbed('#pro4', proC4);
+      var proC5 = "proG5.json";
+      vegaEmbed('#pro5', proC5);
+      var proC7 = "proG7.json";
+      vegaEmbed('#pro7', proC7);
+    </script>
+
   </head>
   <body>
     <nav class="navbar">
@@ -51,35 +67,131 @@
           <div class="main__content">
             <div class="intro">
               <h1>Data Science Project</h1>
-              <h2>Title of Project</h2>
+              <h2>Impacts of Covid-19 on the M&A Landscape</h2>
               <p>Jayden Law</p>
+              <p>Word Count : 779</p>
             </div>
           </div>
-        <div class="main__content">
-          <h2>Introduction</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo donec. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Et tortor consequat id porta nibh venenatis cras sed felis. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Aliquet enim tortor at auctor. Aenean pharetra magna ac placerat vestibulum lectus. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Arcu felis bibendum ut tristique et. Id diam maecenas ultricies mi. Dictum non consectetur a erat nam at lectus. Felis eget velit aliquet sagittis id consectetur. Sit amet justo donec enim diam vulputate ut pharetra. Interdum velit euismod in pellentesque massa placerat duis. Convallis posuere morbi leo urna molestie.
+        <div class="main__content" id="proCont">
+          <h2>Aim</h2>
+          <p>This webpage provides a visual representation of the impact of the pandemic on merger and acquisition activity around the world through data visualisations. It aims to provide insights for understanding the economic impacts of COVID-19.</p>
+          <h2>Analysis</h2>
+          <div class="chart" id="pro1"></div>
+          <a rel="stylesheet" href="https://colab.research.google.com/drive/1XH_T5m23H7v0PdUcu2i5jJMi6YvQKGae" target="_blank">Google Colab 1</a>
+          <p>Global M&A activity was highest in the Americas before COVID, with EMEA following. After COVID, the number of deals in the Americas decreased but has since increased, while the EMEA region saw a decrease in 2021 and a significant increase in 2022. The APAC region saw stable activity, with a slight increase in 2021 and 2022. These results show a rebound in activity post-COVID.</p>
+          <div class="chart" id="pro2"></div>
+          <a href="https://colab.research.google.com/drive/1RFwTIKcQTXu7QK86sdF1VNnbHVJQz-8Z" target="_blank">Google Colab 2</a>
+          <p>The data suggests that certain sectors, such as financials and TMT, have consistently seen higher levels of M&A activity, while others, such as agriculture and construction, had less activity. It's also noteworthy that some sectors, such as pharma, medical, and biotech, have seen increased activity post-COVID after an initial drop. Defence saw the largest proportional drop during Covid.</p>
+          <div class="chart" id="pro3"></div>
+          <a href="https://colab.research.google.com/drive/1Qfz57Td7EJ4alxJVuo0PBCC65t23YrsW" target="_blank">Google Colab 3</a>
+          <p>Comparied to the previous visualisation, sectors with a higher representation in public markets, such as industrials and TMT, tend towards higher levels of M&A activity. Sectors with smaller market representation, such as real estate and financials, have less M&A activity. Key note- M&A activity is influenced by other factors.</p>
+          <div class="chart" id="pro4"></div>
+          <div class="chart" id="pro5"></div>
+          <a href="https://colab.research.google.com/drive/1wqfxkPHXk8S0A9jtggI_wlx2cC6XfYTo#scrollTo=2Y9UYTkgftwq" target="_blank">Google Colab 4/5</a>
+          <p>Both the above visualisations include a regression line showing the trend of M&A deals over time. The first visualisation shows a slight increase in M&A deal values post-COVID, while the second visualisation shows a steadier trend of deal values pre-COVID, indicating Covid-19s potential positive impact on individual deal value.</p>
+          <img src="ProG6.png" alt="proG6Pic" width="300" height="400"></img>
+          <a href="https://colab.research.google.com/drive/1Tq4ATkZiRqNFebcfVI4UcSw6-N8zhf6M#scrollTo=EyJC_lP6jA3D" target="_blank">Google Colab 6</a>
+          <p>The dendrogram shows clusters of stock prices for 9 financial institutions from 2017-2022 (December), grouped BB: GS, MS JPM. MM:MAC, HLI, SF. EB: LAZ, EVR, and MC. The dynamic time warping technique was used to better identify similarities in trends. </p>
+          <p>We see that, excluding JPM and SF, the bank categories are well maintained, indicating the groups are affected categorically differently. The shape of each is pretty similar. The first dip indicates Covid-19. Pre-covid there was steady growth however, afterwards there's steeper growth before a slight decrease.</p>
+          <div class="chart" id="pro7"></div>
+          <a href="https://colab.research.google.com/drive/1q7LFZ9eGM4qkyRSQN9M90gykTbCeJDIP" target="_blank">Google Colab 7</a>
+          <p>This chart aims to test if institutions, whom perform M&A deals, employees base salary got impacted by Covid. The data suggests there has been a general trend of salary growth for most firms and seniority levels, post-covid. Although the extent of this growth varies between firms and levels.</p>
+        </div>
+        <div class="main__content"> 
+          <h3>Chord Chart representing flows of cross continental border M&A deals</h3>
+          <p>Source : S&P Global IQ Pro</p>
+          <p>***The default slider year is 2017***</p>
+          <p>The slider shows chords from buyer regions to seller regions. Hover over the chords for tooltips showing the number of deals and direction of the flows.</p>
+          <p>Cross-border M&A deals, a small part of the overall M&A market, may've been impacted by travel restrictions due to Covid-19. The USA, Canada, and Europe typically see more activity. A decrease was seen in such deals in 2020, but 2021 saw a rebound, particularly in the USA and Canada.</p>
+          <a href="https://colab.research.google.com/drive/1RecXKZRNq6vZ7avyVP0kbz_D_tpp43PW#scrollTo=5cfsdWSCFhvk" target=""_blank>Colab 8</a>
+          <label id="sliderLabel" for="code-selector">Year : </label>
+          <input type="range" min="2017" max="2022" value="2017" id="code-selector">
+          <output id="value-display"></output>
+          <div id="output">
+          <script type="module">
 
-Egestas congue quisque egestas diam. Dignissim suspendisse in est ante. At quis risus sed vulputate odio ut enim blandit volutpat. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Urna et pharetra pharetra massa massa ultricies. Mi in nulla posuere sollicitudin. In cursus turpis massa tincidunt dui ut. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Ac auctor augue mauris augue neque gravida in fermentum et. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Hac habitasse platea dictumst vestibulum. Tortor at risus viverra adipiscing at in tellus integer feugiat. Felis eget nunc lobortis mattis. Eu consequat ac felis donec. Magna fermentum iaculis eu non diam.
+          import define from "./ind_2017.js";
+          import define1 from "./ind_2018.js";
+          import define2 from "./ind_2019.js";
+          import define3 from "./ind_2020.js";
+          import define4 from "./ind_2021.js";
+          import define5 from "./ind_2022.js";
+          import {Runtime, Library, Inspector} from "./runtime.js";
 
-Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Purus in massa tempor nec feugiat nisl pretium fusce. Mattis rhoncus urna neque viverra justo nec. Ac felis donec et odio pellentesque diam volutpat. Dolor sit amet consectetur adipiscing. Lacus luctus accumsan tortor posuere. Urna molestie at elementum eu facilisis. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Cursus in hac habitasse platea dictumst quisque. Quam adipiscing vitae proin sagittis. Amet risus nullam eget felis eget nunc lobortis mattis aliquam. Tellus cras adipiscing enim eu turpis egestas pretium.
+            const runtime = new Runtime();
+            const main = runtime.module(define, Inspector.into('output'));
 
-Leo duis ut diam quam nulla porttitor. Lectus mauris ultrices eros in cursus turpis massa. Habitant morbi tristique senectus et. Venenatis urna cursus eget nunc scelerisque viverra mauris. Scelerisque viverra mauris in aliquam sem fringilla ut. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Habitant morbi tristique senectus et netus et malesuada fames. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Amet mauris commodo quis imperdiet. Sem integer vitae justo eget magna fermentum iaculis. Enim facilisis gravida neque convallis a cras semper auctor neque. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Morbi enim nunc faucibus a. Odio facilisis mauris sit amet massa. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Elit eget gravida cum sociis.
+            // The two lines of code that can be executed
+            const line1 = () => {
+              const runtime = new Runtime();
+              const main = runtime.module(define, Inspector.into('output'));
+            }
+            const line2 = () => {
+              const runtime1 = new Runtime();
+              const main1 = runtime1.module(define1, Inspector.into('output'));
+            }
 
-Turpis massa tincidunt dui ut. Laoreet id donec ultrices tincidunt arcu. Est velit egestas dui id ornare arcu odio ut. Felis imperdiet proin fermentum leo. Eu scelerisque felis imperdiet proin fermentum leo. Tristique senectus et netus et malesuada. Justo eget magna fermentum iaculis eu non. Etiam tempor orci eu lobortis elementum. Purus viverra accumsan in nisl nisi scelerisque. Felis imperdiet proin fermentum leo vel orci porta non. Mattis nunc sed blandit libero volutpat sed cras. Vitae proin sagittis nisl rhoncus. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Ac turpis egestas sed tempus urna. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Felis donec et odio pellentesque diam volutpat. Et sollicitudin ac orci phasellus egestas. Nisi est sit amet facilisis.
+            const line3 = () => {
+              const runtime2 = new Runtime();
+              const main2 = runtime2.module(define2, Inspector.into('output'));
+            }
 
-Facilisi morbi tempus iaculis urna id volutpat lacus. Pellentesque id nibh tortor id. Auctor urna nunc id cursus metus aliquam. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Mi sit amet mauris commodo quis. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Integer quis auctor elit sed vulputate. Non blandit massa enim nec dui nunc mattis. Nunc sed id semper risus in hendrerit. Scelerisque fermentum dui faucibus in. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Sem fringilla ut morbi tincidunt. Sem viverra aliquet eget sit amet tellus cras adipiscing. Nec sagittis aliquam malesuada bibendum arcu vitae. Facilisis magna etiam tempor orci eu lobortis.
+            const line4 = () => {
+              const runtime3 = new Runtime();
+              const main3 = runtime3.module(define3, Inspector.into('output'));
+            }
 
-Molestie at elementum eu facilisis. Nisl suscipit adipiscing bibendum est ultricies integer. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Fusce id velit ut tortor pretium viverra suspendisse. Nunc consequat interdum varius sit amet mattis. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Etiam tempor orci eu lobortis elementum. Sit amet justo donec enim diam vulputate ut. Congue quisque egestas diam in. Mi bibendum neque egestas congue.
+            const line5 = () => {
+              const runtime4 = new Runtime();
+              const main4 = runtime4.module(define4, Inspector.into('output'));
+            }
 
-Nec ullamcorper sit amet risus nullam eget. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Sit amet volutpat consequat mauris nunc congue. Eu lobortis elementum nibh tellus molestie nunc. Leo urna molestie at elementum. Habitant morbi tristique senectus et netus. Egestas diam in arcu cursus euismod. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Lectus sit amet est placerat in egestas erat imperdiet sed. Vel facilisis volutpat est velit egestas dui. Amet volutpat consequat mauris nunc congue nisi vitae. Eu scelerisque felis imperdiet proin fermentum leo. Mauris cursus mattis molestie a iaculis at erat.
+            const line6 = () => {
+              const runtime5 = new Runtime();
+              const main5 = runtime5.module(define5, Inspector.into('output'));
+            }
 
-Faucibus in ornare quam viverra. Et tortor at risus viverra adipiscing. Egestas congue quisque egestas diam in. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Pretium fusce id velit ut tortor. Augue lacus viverra vitae congue eu consequat ac felis. Scelerisque felis imperdiet proin fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Nunc congue nisi vitae suscipit tellus mauris. Enim tortor at auctor urna nunc id cursus. Dictum varius duis at consectetur lorem. In pellentesque massa placerat duis ultricies. Scelerisque purus semper eget duis. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+            // The function that will be called when the range input value changes
+            const onRangeChange = () => {
+              // Get the value of the range input element
+              const value = document.getElementById('code-selector').value;
+              //Clear Screen
+              document.getElementById('output').innerHTML = '';
+              // Update the value display
+              document.getElementById('value-display').value = value;   
+              // Execute the appropriate line of code
+              if (value == 2017) {
+                line1();
+              } else if (value == 2018){
+                line2();
+              } else if (value == 2019){
+                line3();
+              } else if (value == 2020){
+                line4();
+              } else if (value == 2021){
+                line5();
+              } else {
+                line6();
+              }
+            }
 
-Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Blandit turpis cursus in hac habitasse platea dictumst quisque. Feugiat nisl pretium fusce id velit ut tortor. Vel risus commodo viverra maecenas accumsan lacus. Viverra adipiscing at in tellus integer. Justo eget magna fermentum iaculis eu non diam. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Pharetra massa massa ultricies mi quis hendrerit. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Proin nibh nisl condimentum id. Eget gravida cum sociis natoque penatibus et. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper.
-
-Vel pretium lectus quam id leo in vitae turpis. Quam quisque id diam vel quam elementum pulvinar. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Elit sed vulputate mi sit amet mauris commodo. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Nibh sed pulvinar proin gravida hendrerit. Consectetur a erat nam at lectus urna duis. Semper quis lectus nulla at volutpat diam ut venenatis. Adipiscing diam donec adipiscing tristique. Sit amet consectetur adipiscing elit pellentesque. Mauris sit amet massa vitae tortor condimentum. Purus ut faucibus pulvinar elementum integer enim neque. Consectetur libero id faucibus nisl tincidunt eget. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Congue quisque egestas diam in arcu.
-
-Nisl suscipit adipiscing bibendum est ultricies integer. Et leo duis ut diam quam nulla. Dui ut ornare lectus sit. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Arcu dictum varius duis at consectetur lorem donec massa. Pretium lectus quam id leo. Elementum eu facilisis sed odio morbi. Dui ut ornare lectus sit. Eu feugiat pretium nibh ipsum. </p>
+            // Set up an event listener to call the onRangeChange function when the range input value changes
+            document.getElementById('code-selector').addEventListener('input', onRangeChange);
+          </script>
+          </div>
+         </div>
+         <div class="main__content" id="proCont">
+          <h2>Accessing Data and Challenges in Cleaning and Analysis</h2>
+          <p>Given Covid-19 is a historical event I haven't used API's as it would eventually neglect the primary focus of impacts of Covid-19. My most prevalent source was S&P Global IQ Pro CSV's.</p>
+          <p>The maps data was gathered as a geojson and 2 CSV files, the CSVs were cleaned and merged. Difficulty arose when transforming the data after a slider change. Reformatting the vega-lite json solved this issue.</p>
+          <p>The data for the heat map was scraped from a html from Statista, then cleaned and I added a selector to see each sector more clearly.</p>
+          <p>Data for the market composition chart was scraped from S&P Global IQ Pro and companiesmarketcap.com which was cleaned utilising loops and then concatenated to one data-frame.</p>
+          <p>Cleaning the data of symbols using lambda and covering only the bottom 95% values allowed the graph to show data on the y-axis up to 800 rather than 8000, making the trend line distinguishable between the 2 comparative charts.</p>
+          <p>The dendrogram was created using unsupervised learning. The data was cleaned utilising loops, then dynamically time warped to cluster the data more effectively, which was from the yfinance API.</p>
+          <p>The data was scraped from a pdf which required using tabula. Then using for loops and split, cleaned the data. Presenting the data in vega-lite involved using layers to attain the graphs appearance.</p>
+          <p>Creating the SVG chord chart used JavaScript d3blocks. After switching from holoviews in Python, I created a chart with chords, tooltips, labels and ticks. I encountered difficulties with the slider, consequently creating a separate JavaScript file for each instance, selecting the chart with if statements. Cleaning the data required loops, pivot tables, and converting it into JavaScript-readable matrices using json dumps.</p>
+          <h2>Conclusion</h2>
+          <p>From the visualisations presented we can see Covid-19 has impacted the M&A landscape, globally to individual sectors right down to employees salaries. Generally recovery from Covid-19 in the M&A industry has bounced back strongly. Further work can be done on this such as looking into how deal time was impacted by the lockdowns ect.</p>
           </div>
           <a href="#" class="top">Back to Top<i class="fa-solid fa-up-long"></i></a>
         </div>

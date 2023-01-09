@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": "Heatmap Breaking Down Global M&A by Sector",
+    "fontSize": 12,
+    "subtitle": [
+      "Source : Statista",
+      "M&A deal value £B", "Data was scraped and had some values missing for", "Construction, Defence, Leisure and Transportation."
+    ]
+  },
+    "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/Sector_Data.csv"
+  },
+  "width":160,
+  "encoding": {
+    "y": {"field": "Sector", "type": "ordinal"},
+    "x": {"field": "level_1", "type": "ordinal", "title": "Year"}
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "selection": {
+        "Sector": {
+          "type": "multi",
+          "fields": ["Sector"],
+          "bind": {
+            "input": "select",
+            "options": [
+              null,
+              "Agriculture",
+              "Business services",
+              "Construction",
+              "Consumer",
+              "Defence",
+              "Energy, mining and utilities",
+              "Financial services",
+              "Industrials and chemicals",
+              "Leisure",
+              "Pharma, medical and biotech",
+              "Real estate",
+              "TMT",
+              "Transportation"
+            ],
+            "name": "Sectors :"
+          }
+        }
+      },
+      "transform": [{"filter": {"selection": "Sector"}}],
+      "encoding": {
+        "color": {
+          "field": "0",
+          "type": "quantitative",
+          "title": "Value $B",
+          "legend": {"direction": "horizontal", "gradientLength": 60}
+        }
+      }
+    },
+    {
+      "mark": "text",
+      "transform": [{"filter": {"selection": "Sector"}}],
+      "encoding": {
+        "text": {"field": "0", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum['0'] < 1000", "value": "grey"},
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {"axis": {"grid": true, "tickBand": "extent"}}
+}

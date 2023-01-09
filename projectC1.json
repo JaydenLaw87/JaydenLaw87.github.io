@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 300,
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "World Map Showing 3 the Economic Areas",
+    "fontSize": 12,
+    "subtitle": ["Sources : https://geojson-maps.ash.ms/ , S&P Global IQ Pro","Total M&A deal value £M (01/01/2010 - 07/12/2022)"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2022,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/ProjectG1_clean%20(1).csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.Year == yearSelector"},
+    {
+      "lookup": "Countries",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/worldgeo.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "legend": {"title": "£M", "orient": "right", "direction": "vertical"},
+      "type": "quantitative"
+    },
+    "stroke": {"field": "Region"},
+    "tooltip": [
+      {"field": "Region", "type": "nominal", "title": "Region"},
+      {"field": "Value", "type": "quantitative", "title": "Value"}
+    ]
+  },
+  "config": {}
+}

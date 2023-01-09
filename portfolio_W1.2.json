@@ -1,55 +1,56 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=1980",
-  "format":{
-    "type": "json",
-    "property": "data"}},
-
-    "title": {
-    "text": "Premiership - home advantage?",
-    "subtitle":["Cumulative goals scored by home and away teams",""],
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+  "title": {
+    "text": "Inflation - since 1800",
+    "subtitle": "RPI: long series: annual percentage change ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
-
   },
-
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json",
+    "format": {"type": "json", "property": "years"}
+  },
+  "mark": {"type": "line", "color": "#00BFFF", "strokeWidth": 2, "opacity": 1},
   "transform": [
-
-    {"calculate": "now()", "as": "today"},
-    {"calculate": "datum.match_start - datum.today", "as":"futureTest"},
-    {"filter":"datum.futureTest<0"},
-
-    {"window": [
-      {"op": "sum","field": "stats.home_score", "as": "Home"},
-      {"op": "sum","field": "stats.away_score", "as": "Away"}],
-      "sort": [{"field":"match_start", "order":"ascending"}]}],
-
-    "width": 250,
-    "height": 200,
-
-  "encoding": {"x": {"field": "match_start", "type": "temporal","title":null}},
-
-  "layer":[
-
-    {"mark": {"type":"circle", "size":100},
-
-     "encoding": {
-       "y": {"field": "Home", "type": "quantitative","title":null},
-        "color": {
-        "datum": "Home",
-            "scale": {"range": ["green", "blue"]},
-            "legend":{
-              "orient": "top-left",
-              "fillColor":"white"}}}},
-
-
-    {"mark": {"type":"circle", "size":100},
-
-     "encoding": {
-       "y": {"field": "Away", "type": "quantitative","title":null},
-      "color": {"datum": "Away"}}}
-     ]
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1800,
+      "bind": {
+        "input": "range",
+        "min": 1800,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1800,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": {"data": "myData", "field": "value"}}
+    }
+  }
 }

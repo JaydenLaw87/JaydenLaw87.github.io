@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
+  "width": 320,
   "description": "A candlestick chart inspired by an example in Protovis (http://mbostock.github.io/protovis/ex/candlestick.html)",
   "data": {
     "values": [
@@ -2286,10 +2286,11 @@
       "scale": {"zero": false},
       "axis": {"title": "Price"}
     },
-    "color": {
-      "condition": {"test": "datum.Open < datum.Close", "value": "#06982d"},
-      "value": "#ae1325"
-    }
+      "color": {
+          "field": "Volume",
+          "type": "quantitative",
+          "legend": {"direction": "vertical", "gradientLength": 60}
+        }
   },
   "layer": [{"mark": "bar", "encoding": {"y": {"field": "Adj Close"}}}],
   "config": {}

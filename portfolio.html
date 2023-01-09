@@ -10,32 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
     <script type="text/javascript">
     var portChart1 = "portfolio_W1.1.json";
     vegaEmbed('#pc1', portChart1);
     var portChart2 = "portfolio_W1.2.json";
     vegaEmbed('#pc2', portChart2);
-    </script>
-    <script type="text/javascript">
     var portChart3 = "IMF_W2.1.json";
     vegaEmbed('#pc3', portChart3);
     var portChart4 = "IMF_W2.2.json";
     vegaEmbed('#pc4', portChart4);
-    </script>
-    <script type="text/javascript">
     var portChart5 = "w3_chart.json";
     vegaEmbed('#pc5', portChart5);
     var portChart6 = "w3_Chart1.json";
     vegaEmbed('#pc6', portChart6);
-    </script>
-    <script type="text/javascript">
     var portChart7 = "rc_Chart.json";
     vegaEmbed('#pc7', portChart7);
-    </script>
-    <script type="text/javascript">
     var portChart8a = "data_ONS-P2E3_Chart.json";
     vegaEmbed('#pc8a', portChart8a);
     var portChart8b = "data_ONS-P2WU_Chart.json";
@@ -54,13 +47,20 @@
     vegaEmbed('#pc8h', portChart8h);
     var portChart8i = "data_ONS-P46J_Chart.json";
     vegaEmbed('#pc8i', portChart8i);
-    </script>
-    <script type="text/javascript">
     var portChart9 = "map1.json";
     vegaEmbed('#pc9', portChart9);
     var portChart10 = "Map2.json";
     vegaEmbed('#pc10', portChart10);
+    var portChart11 = "w8_chart1.json";
+    vegaEmbed('#pc11', portChart11);
+    var portChart12 = "w8_chart2.json";
+    vegaEmbed('#pc12', portChart12);
+    var portChart13 = "ProG4.json";
+    vegaEmbed('#pc13', portChart13);
+    var portChart14 = "projectG2.json";
+    vegaEmbed('#pc14', portChart14);
     </script>
+
   </head>
   <body>
     <nav class="navbar">
@@ -117,9 +117,9 @@
                   <p>The above graph shows bitcoin price between the years 2016-2021 with the additional feature of sliders to hone in on a specific time frame.</p>
                 </div>
                 <div class="group">
-                  <h2>Chart 2: Football Scores</h2>
+                  <h2>Chart 2: Inflation</h2>
                   <div class="chart" id="pc2"></div>
-                  <p>This chart represents the disparity between goals scored when playing at home vs away in Premiership football matches.</p>
+                  <p>This chart tracks RPI inflation in the UK since 1800.</p>
                 </div>
               </div>
             </div>
@@ -129,15 +129,14 @@
             <div class="infoCard" id="slideInfoCard">
             	<h1>Week 2</h1>
               <div class="slideTable">
-                <container class="group">
+                <div class="group">
                   <h2>Chart 3: IMF Lending</h2>
                   <div class="chart" id="pc3"></div>
-                  <p>IMF Lending chart</p>
-                </container>
+                </div>
                 <div class="group">
-                  <h2>Chart 4: IMF Lending Indexed</h2>
+                  <h2>Chart 2: IMF Lending</h2>
                   <div class="chart" id="pc4"></div>
-                  <p>IMF Lending chart</p>
+                  <p>After indexing the chart to the global GDP, the chart indicates that 1984 is the riskiest year.</p>
                 </div>
               </div>
             </div>
@@ -146,11 +145,10 @@
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
               <h1>Week 3</h1>
-              <div class="slideTable" id="candle">
+              <div class="slideTable">
                 <div class="group">
                   <h2>Chart 5: APPL Stock Bar Chart</h2>
                   <div class="chart" id="pc5"></div>
-                  <p>The above shows the Apple stock price with red or green indicating whether or not the close of the current day is higher or lower than the previous day</p>
                 </div>
                 <div class="group">
                   <h2>Chart 6: APPL Candlestick Chart</h2>
@@ -168,8 +166,9 @@
                 <div class="group">
                   <h2>Chart 7: Rugby Championship Performance Chart</h2>
                   <div class="chart" id="pc7"></div>
-                  <p>Wowzers</p>
-                </div>
+                  <p>I chose this site <a href="https://super.rugby/therugbychampionship/competition-stats/" target="_blank">rugby data</a> as I am interested in rugby and this was the official website so reliable.</p>
+                  <a href="https://colab.research.google.com/drive/13Fy1CG82ch3jJFuGuZq9KMaWAi7JexEs" target="_blank">Colab</a>
+              </div>
               </div>
             </div>
           </div>
@@ -178,6 +177,8 @@
             <div class="infoCard" id="slideInfoCard">
               <h1>Week 5</h1>
               <h2>A dashboard showing the value of UK imports and exports of different goods:</h2>
+
+              <p>Source : ONS API    :<a href="https://colab.research.google.com/drive/1-fLVur8j_PrCYiUPIGbb4FP8vKpezaxJ" target="_blank">Colab</a></p>
               <div class="slideTable" id="dash">
                 <div class="group">
                   <div class="chart" id="pc8a"></div>
@@ -214,6 +215,7 @@
             <div class="infoCard" id="slideInfoCard">
             	<h1>Week 6</h1>
               <h2>Reading Week</h2>
+              
             </div>
           </div>
 
@@ -237,25 +239,59 @@
 
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-            	<h2>Week 8</h2>
-              <p>Data science is also more than “machine learning,” which is about how
-systems learn from data. Systems may be trained on data to make decisions, and training is a continuous process, where the system updates its
-learning and (hopefully) improves its decision-making ability with more
-data. A spam filter is a good example of machine learning.</p>
+            	<h1>Week 8</h1>
+              <p>A statement was made that a higher proportion of those in poorer regions hold crypto</p>
+              <p> There's no clear positive correlation between the poverty and crypto holders, however there's a slight negative correlation between gdp per capita and crypto holders.</p>
+              <div class="slideTable">
+                <div class="group">
+                  <h2>Chart 11: Festival Of Economics Crypto</h2>
+                  <div class="chart" id="pc11"></div>
+                  <p>Refute</p>
+                </div>
+                <div class="group">
+                  <h2>Chart 12: Festival Of Economics Crypto</h2>
+                  <div class="chart" id="pc12"></div>
+                  <p>Weak Support</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-            	<h2>Week 9</h2>
-              <p>philisophical thoughts protrude the imagination</p>
+            	<h1>Week 9</h1>
+              <div class="slideTable">
+                <div class="group">
+                  <h2>Chart 13: Scatter Plot with regression</h2>
+                  <div class="chart" id="pc13"></div>
+                </div>
+                <div class="group">
+                  <h2>Chart 14: Heatmap</h2>
+                  <div class="chart" id="pc14"></div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="mySlides fade">
             <div class="infoCard" id="slideInfoCard">
-              <h2>Week 10</h2>
-              <p>this is my graph</p>
+              <h1>Week 10</h1>
+              <div class="slideTable">
+                <div class="group">
+                  <h2>Chart 15: Supervised Machine Learning</h2>
+                  <p><a href="https://colab.research.google.com/drive/1iRxvtav7nCM4CRDATRzoV91iwTDLu_Xp" target="_blank">Colab</a></p>
+                  <p>Hypothesis: The wines with high malic acid and high alcohol will classify the same</p>
+                  <img src="portW11.png" alt="portW11Pic"></img>
+                  <p>The wines with low malic acid and high alcohol actually grouped together</p>
+                </div>
+                <div class="group">
+                  <h2>Chart 16: Unsupervised Machine Learning</h2>
+                  <p><a href="https://colab.research.google.com/drive/1Tq4ATkZiRqNFebcfVI4UcSw6-N8zhf6M" target="_blank">Colab</a></p>
+                  <p>Hypothesis: The banks in the same category e.g. BB, MM and EB will cluster together</p>
+                  <img src="ProG6.png" alt="proG6Pic"></img>
+                  <p>In general the hypothesis held apart from for JPM and Stifel</p>
+                </div>
+              </div>
             </div>
             </div>
           </div>

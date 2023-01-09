@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/w8%20clean%20data%202.csv"
+  },
+  "title": "Scatter plot of Countries Real GDP per capita and crypto holders",
+  "params": [{"name": "a", "select": "interval", "bind": "scales"}],
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Crypto%",
+      "type": "quantitative",
+      "scale": {"domain": [0, 50]}
+    },
+    "y": {
+      "field": "Real GDP Per Capita",
+      "type": "quantitative",
+      "scale": {"domain": [0, 110000]},
+      "title":"$ Real GDP Per Capita"
+    },
+    "size": {"field": "Real GDP (10^10)", "type": "quantitative", "title":"$ Real GDP (*10^10)"}
+  },
+  "config": {}
+}

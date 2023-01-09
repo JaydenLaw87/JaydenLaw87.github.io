@@ -11,7 +11,7 @@
   "data":{"url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/data_IMF_creditOutstanding_Update.csv"},
 
   "height": 300,
-  "width": 250,
+  "width": 260,
 
   "mark": {
     "type": "bar",

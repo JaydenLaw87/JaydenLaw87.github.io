@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/w8%20clean%20data%201.csv"
+  },
+  "title": "Correlation between Countries poverty and crypto holders",
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {"field": "Poverty%", "valid": true},
+          {"field": "Crypto%", "valid": true}
+        ]
+      }
+    }
+  ],
+  "mark": "rect",
+  "width": 250,
+  "height": 250,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 30},
+      "field": "Poverty%",
+      "title": "% of the Population in poverty (WB standard)",
+      "type": "quantitative"
+    },
+    "y": {
+      "bin": {"maxbins": 30},
+      "field": "Crypto%",
+      "title": "% of the Population holding crypto (WB standard)",
+      "type": "quantitative"
+    },
+    "color": {"aggregate": "count", "type": "quantitative"}
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}

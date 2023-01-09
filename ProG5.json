@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Scatter Plot For Pre Covid",
+    "subtitle": [
+      "Source : S&P Global IQ Pro",
+      "Data for the lower 95 percentile of deals to allow gradient of line",
+      "to be distinguishable to the other comparitive graph as data went",
+      "up to $70Bn+"
+    ]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/JaydenLaw87/JaydenLaw87.github.io/main/ScatterGroup.json"
+  },
+  "height": 250,
+  "width": 300,
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "rgb(0,47,167)", "size": 20},
+      "transform": [{"filter": "datum['Pre/Post'] == 0"}],
+      "encoding": {
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative", "title": "Value ($M)"},
+        "tooltip": [{"field": "Year"}, {"field": "Quarter"}]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [
+        {"filter": "datum['Pre/Post'] == 0"},
+        {"regression": "Value", "on": "Date"}
+      ],
+      "encoding": {
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum['Pre/Post'] == 0"},
+        {"regression": "Value", "on": "Date", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.8f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ],
+  "config": {}
+}

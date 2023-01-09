@@ -1,7 +1,7 @@
 :root {
   --black: black;
   --white: white;
-  --gold: #1F51FF;
+  --gold: #ffd700;
 }
 
 * {
@@ -417,6 +417,17 @@
   color: var(--white);
 }
 
+.main__container h3 {
+
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--white);
+}
+
 .main__container p {
   margin-left: 2rem;
   padding-bottom: 20px;
@@ -588,7 +599,7 @@
 }
 
 .chart-wrapper{
-  color:white;
+ color: white;
 }
 
 .slideTable{
@@ -611,12 +622,6 @@
     grid-row-gap: 40px;
     margin-right: 25px;
   }
-  #candle {
-    grid-template-columns: 97%;
-    grid-column-gap: 3%;
-    grid-row-gap: 40px;
-    margin-right: 25px;
-  }
 }
 
 .group{
@@ -630,8 +635,34 @@
   border-color: var(--black);
   outline-color: var(--gold);
   align-items: center;
+  overflow-x: scroll;
 }
 
 .group h2 {
   color: var(--black);
+}
+
+.observablehq{
+  background-color: white;
+}
+
+#sliderLabel{
+  color: white;
+}
+
+#value-display{
+  color: white;
+}
+
+#proCont {
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0;
+  overflow-x: scroll;
+}
+
+.group img{
+  justify-items: center;
+  width: 300;
 }
